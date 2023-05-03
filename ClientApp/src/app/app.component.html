@@ -1,0 +1,16 @@
+<body class="col-md-4 offset-md-4 mt-5">
+  <h1 class="text-center" id="tableLabel">Lista Kontaktów</h1>
+
+  <p class="text-center">Zaloguj się aby zobaczyć resztę opcji. Aby zalogować się po raz pierwszy możesz skorzystać z username: "admin", passwd: "Admin123-"</p>
+
+
+
+
+  <app-login (loginEvent)="logged($event)"></app-login>
+
+
+  
+  <app-fetch-data [isLogged] ="isLogged"></app-fetch-data>
+
+
+</body>
